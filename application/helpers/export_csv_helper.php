@@ -23,7 +23,7 @@ if (!function_exists('arrayToCSV')) {
             $filename = date('YmdHis') . "_export_{$filename}.csv";
 
             header("Content-Description: File Transfer");
-            header("Content-type: application/csv");
+            header("Content-type: application/csv; charset=UTF-8");
             header("Content-Disposition: attachment; filename={$filename}");
             header("Content-Transfer-Encoding: binary");
             header("Expires: 0");
